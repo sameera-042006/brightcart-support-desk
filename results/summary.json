@@ -1,0 +1,33 @@
+{
+  "pricing": {
+    "model": "gemini-3.5-flash-lite",
+    "input_price_per_1m": 0.1,
+    "output_price_per_1m": 0.4,
+    "currency": "USD",
+    "date_checked": "",
+    "note": "Actual spend is 0 on the free tier; cost shown is the equivalent paid-tier cost."
+  },
+  "systems": {
+    "multi_agent": {
+      "cases": 3,
+      "task_success_rate": 1.0,
+      "decision_accuracy": 1.0,
+      "unsafe_approval_rate": 0.0,
+      "reliability": 1.0,
+      "tool_success_rate_excl_injected_failures": 1.0,
+      "case_level_hallucination_rate": 0.0,
+      "mean_claim_hallucination_rate": 0.0,
+      "mean_groundedness": 1.0,
+      "mean_evidence_coverage": 1.0,
+      "mean_citation_correctness": 1.0,
+      "mean_latency_ms": 21309.4,
+      "p95_latency_ms": 22935.1,
+      "mean_cost_per_query_usd": 0.000257,
+      "total_answer_cost_usd": 0.000772,
+      "total_evaluation_cost_usd": 0.000349,
+      "pass_by_category": {
+        "supported": "3/3"
+      }
+    }
+  }
+}

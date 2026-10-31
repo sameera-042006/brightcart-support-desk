@@ -1,0 +1,16 @@
+test_id,system,agent,llm_calls,input_tokens,output_tokens,cost_usd
+S01,multi_agent,triage,1,274,57,5e-05
+S01,multi_agent,investigator,0,0,0,0.0
+S01,multi_agent,verifier,1,727,177,0.000144
+S01,multi_agent,responder,1,541,94,9.2e-05
+S01,multi_agent,evaluator,1,552,198,0.000134
+S02,multi_agent,triage,1,264,56,4.9e-05
+S02,multi_agent,investigator,0,0,0,0.0
+S02,multi_agent,verifier,1,544,158,0.000118
+S02,multi_agent,responder,1,471,82,8e-05
+S02,multi_agent,evaluator,1,357,120,8.4e-05
+S03,multi_agent,triage,1,273,52,4.8e-05
+S03,multi_agent,investigator,0,0,0,0.0
+S03,multi_agent,verifier,1,720,102,0.000113
+S03,multi_agent,responder,1,460,86,8e-05
+S03,multi_agent,evaluator,1,537,192,0.000131

@@ -1,0 +1,50 @@
+{
+  "return_policy": {
+    "title": "Return policy",
+    "source_quality": 0.95
+  },
+  "refund_policy": {
+    "title": "Refund policy",
+    "source_quality": 0.95
+  },
+  "warranty_policy": {
+    "title": "Warranty policy",
+    "source_quality": 0.95
+  },
+  "cancellation_policy": {
+    "title": "Cancellation policy",
+    "source_quality": 0.95
+  },
+  "gift_card_policy": {
+    "title": "Gift card policy",
+    "source_quality": 0.95
+  },
+  "damaged_items_policy": {
+    "title": "Damaged items policy",
+    "source_quality": 0.95
+  },
+  "shipping_express": {
+    "title": "Express shipping",
+    "source_quality": 0.9
+  },
+  "shipping_standard_a": {
+    "title": "Standard shipping time (website FAQ)",
+    "source_quality": 0.7
+  },
+  "shipping_standard_b": {
+    "title": "Standard shipping time (regional help page)",
+    "source_quality": 0.7
+  },
+  "international_shipping": {
+    "title": "International shipping",
+    "source_quality": 0.9
+  },
+  "support_hours": {
+    "title": "Support hours",
+    "source_quality": 0.9
+  },
+  "promotions_faq": {
+    "title": "Promotions FAQ",
+    "source_quality": 0.6
+  }
+}

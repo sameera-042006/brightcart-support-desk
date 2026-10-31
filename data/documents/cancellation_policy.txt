@@ -1,0 +1,1 @@
+An order can be cancelled only while its status is processing. Once an order has shipped it cannot be cancelled and must be returned after delivery.

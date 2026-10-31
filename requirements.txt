@@ -1,0 +1,12 @@
+# After installing, run `pip freeze > requirements.lock.txt` and record the versions in your report.
+mcp>=2,<3
+google-genai
+fastapi
+uvicorn
+python-dotenv
+pydantic>=2
+httpx
+numpy
+pandas
+openpyxl
+pytest
