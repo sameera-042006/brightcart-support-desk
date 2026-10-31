@@ -7,7 +7,7 @@ services:
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
-    dockerCommand: ./start.sh
+    dockerCommand: sh start.sh
     healthCheckPath: /health
     autoDeploy: true
     envVars:
