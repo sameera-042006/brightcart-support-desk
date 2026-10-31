@@ -8,25 +8,59 @@
     "note": "Actual spend is 0 on the free tier; cost shown is the equivalent paid-tier cost."
   },
   "systems": {
+    "baseline": {
+      "cases": 28,
+      "task_success_rate": 0.2143,
+      "decision_accuracy": 0.5714,
+      "unsafe_approval_rate": 0.0,
+      "reliability": 1.0,
+      "tool_success_rate_excl_injected_failures": null,
+      "case_level_hallucination_rate": 0.7857,
+      "mean_claim_hallucination_rate": 0.5596,
+      "mean_groundedness": 0.3869,
+      "mean_evidence_coverage": 0.5923,
+      "mean_citation_correctness": null,
+      "mean_latency_ms": 6047.2,
+      "p95_latency_ms": 6708.2,
+      "mean_cost_per_query_usd": 5.4e-05,
+      "total_answer_cost_usd": 0.001501,
+      "total_evaluation_cost_usd": 0.002815,
+      "pass_by_category": {
+        "supported": "3/8",
+        "unknown": "2/5",
+        "false_premise": "0/5",
+        "conflict": "0/3",
+        "numerical": "0/3",
+        "prompt_injection": "1/2",
+        "out_of_domain": "0/2"
+      }
+    },
     "multi_agent": {
-      "cases": 3,
-      "task_success_rate": 1.0,
-      "decision_accuracy": 1.0,
+      "cases": 30,
+      "task_success_rate": 0.8667,
+      "decision_accuracy": 0.9286,
       "unsafe_approval_rate": 0.0,
       "reliability": 1.0,
       "tool_success_rate_excl_injected_failures": 1.0,
-      "case_level_hallucination_rate": 0.0,
+      "case_level_hallucination_rate": 0.0667,
       "mean_claim_hallucination_rate": 0.0,
-      "mean_groundedness": 1.0,
+      "mean_groundedness": 0.9911,
       "mean_evidence_coverage": 1.0,
       "mean_citation_correctness": 1.0,
-      "mean_latency_ms": 21309.4,
-      "p95_latency_ms": 22935.1,
-      "mean_cost_per_query_usd": 0.000257,
-      "total_answer_cost_usd": 0.000772,
-      "total_evaluation_cost_usd": 0.000349,
+      "mean_latency_ms": 16296.6,
+      "p95_latency_ms": 23195.1,
+      "mean_cost_per_query_usd": 0.000185,
+      "total_answer_cost_usd": 0.005561,
+      "total_evaluation_cost_usd": 0.001899,
       "pass_by_category": {
-        "supported": "3/3"
+        "supported": "7/8",
+        "unknown": "5/5",
+        "false_premise": "3/5",
+        "conflict": "3/3",
+        "numerical": "3/3",
+        "tool_failure": "2/2",
+        "prompt_injection": "1/2",
+        "out_of_domain": "2/2"
       }
     }
   }

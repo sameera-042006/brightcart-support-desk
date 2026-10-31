@@ -239,13 +239,13 @@ def summarize(rows):
 
 def write_outputs(all_rows, cost_rows, summary):
     RESULTS.mkdir(exist_ok=True)
-    with (RESULTS / "evaluation_results.csv").open("w", newline="") as f:
+    with (RESULTS / "evaluation_results.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS); w.writeheader(); w.writerows(all_rows)
-    with (RESULTS / "cost_log.csv").open("w", newline="") as f:
+    with (RESULTS / "cost_log.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["test_id", "system", "agent", "llm_calls", "input_tokens", "output_tokens", "cost_usd"])
         w.writerows(cost_rows)
-    (RESULTS / "summary.json").write_text(json.dumps({"pricing": pricing(), "systems": summary}, indent=2))
+    (RESULTS / "summary.json").write_text(json.dumps({"pricing": pricing(), "systems": summary}, indent=2), encoding="utf-8")
     b, m = summary.get("baseline"), summary.get("multi_agent")
     if b and m:
         rows = [("Task success rate", "task_success_rate"), ("Decision accuracy", "decision_accuracy"),
@@ -258,11 +258,11 @@ def write_outputs(all_rows, cost_rows, summary):
                 ("Tool success rate", "tool_success_rate_excl_injected_failures"), ("Reliability", "reliability")]
         lines = ["| Metric | Single-Agent Baseline | Multi-Agent + MCP |", "|---|---|---|"]
         lines += [f"| {lbl} | {b.get(k)} | {m.get(k)} |" for lbl, k in rows]
-        (RESULTS / "comparison.md").write_text("\n".join(lines) + "\n")
+        (RESULTS / "comparison.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main(systems=None, limit=None, api_url=None):
-    cases = json.loads(CASES.read_text())[: limit or None]
+    cases = json.loads(CASES.read_text(encoding="utf-8"))[: limit or None]
     systems = systems or ["baseline", "multi_agent"]
     all_rows, cost_rows, summary = [], [], {}
     for system in systems:
